@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — CLANS MANAGER</title>
+  <style>
+    body{font:16px/1.65 system-ui,sans-serif;max-width:820px;margin:48px auto;padding:0 22px;background:#101116;color:#eee}
+    a{color:#9ba8ff} h1,h2{line-height:1.25} small,.muted{color:#aaa}
+  </style>
+</head>
+<body>
+  <p><a href="index.html">← Legal home</a></p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">CLANS MANAGER · Effective date: 6 November 2026</p>
+
+  <p>This Privacy Policy explains how CLANS MANAGER (“the Bot”) processes information when people use its clan-management features in Discord. The Bot operates through Discord and uses Discord-provided identifiers and events to provide its features.</p>
+
+  <h2>1. Information processed</h2>
+  <p>Depending on which features are used, the Bot may process and store:</p>
+  <ul>
+    <li>Discord user IDs and clan membership/leader/admin status.</li>
+    <li>Clan names, descriptions, points, wins, role IDs, and achievement records.</li>
+    <li>Invitation details, including invited user ID, inviter user ID, status, and creation time.</li>
+    <li>Message-count progress associated with a user ID, used to calculate clan points.</li>
+    <li>Discord server, channel, and role identifiers used for configuration and Bot operations.</li>
+    <li>Voice-channel participation state, checked to award configured clan points.</li>
+    <li>Operational event details sent to the server's configured log channel, such as the acting user's Discord username and clan actions (for example, clan creation or deletion).</li>
+  </ul>
+
+  <h2>2. Message and voice activity</h2>
+  <p>The Bot reads message content in order to recognize its text commands and calculate clan message points. For point calculations, it checks message length and applies a cooldown and counter. The Bot's database stores message-count progress associated with a Discord user ID; it does not store the full text of ordinary messages as part of this points system.</p>
+  <p>The Bot periodically checks voice-channel participation to award configured points. It does not record or store voice audio.</p>
+
+  <h2>3. Why information is used</h2>
+  <ul>
+    <li>To create and manage clans and their membership.</li>
+    <li>To process invitations and update invitation status.</li>
+    <li>To calculate points, wins, achievements, and leaderboards.</li>
+    <li>To create or assign Discord roles when a clan feature requires it.</li>
+    <li>To maintain and troubleshoot the Bot, including operational logs.</li>
+  </ul>
+
+  <h2>4. Storage and retention</h2>
+  <p>Clan records and related counters are stored in a local SQLite database maintained by the Bot operator. The Bot also creates database backups. The current configuration keeps dated backups for up to 14 days before automatically removing older backups. Active database records may remain until they are changed or deleted by an authorized operator.</p>
+
+  <h2>5. Sharing</h2>
+  <p>The Bot does not sell personal information. Information is processed by the Bot to provide its features and is shared with Discord as necessary for normal Discord API operation. Server administrators who have access to the Bot's clan features or database environment may be able to see relevant clan records.</p>
+
+  <h2>6. Your choices and requests</h2>
+  <p>You can stop interacting with the Bot. If you want a stored clan record corrected or deleted, contact the server's administrators or the Bot operator through the server's support channel. Some records may need to be retained temporarily in backups until the backup retention period expires.</p>
+
+  <h2>7. Security</h2>
+  <p>The Bot operator should restrict access to the host, database, backups, and configuration secrets. No method of electronic storage or transmission is completely secure, and absolute security cannot be guaranteed.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>The Bot is a general-purpose Discord utility and is not designed to collect information from children. Users must follow Discord's minimum age requirements and applicable local laws.</p>
+
+  <h2>9. Changes and contact</h2>
+  <p>This Policy may be updated when the Bot's features or data practices change. For privacy questions or requests, contact the Bot operator through the support channel or contact method published in the Discord server where the Bot is used.</p>
+</body>
+</html>
